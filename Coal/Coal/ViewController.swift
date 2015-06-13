@@ -131,7 +131,7 @@ class ViewController: UITableViewController {
     
     func fireNotification() {
         // create a corresponding local notification
-        var notification = UILocalNotification()
+        let notification = UILocalNotification()
         notification.alertBody = "Todo Item Is Overdue" // text that will be displayed in the notification
         notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
         notification.fireDate = NSDate() // todo item due date (when notification will be fired)

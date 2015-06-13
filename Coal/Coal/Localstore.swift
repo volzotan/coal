@@ -40,7 +40,7 @@ class Localstore: NSObject {
     
     func getAll() -> [Message] {
         var arr: [Message] = []
-        for (key, value) in self.messagestore {
+        for (_, value) in self.messagestore {
             arr += [value]
         }
         

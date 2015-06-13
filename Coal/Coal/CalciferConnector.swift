@@ -28,8 +28,8 @@ class CalciferConnector: NSObject {
     }
     
     func getAllMessages(callbackSuccess: (messages: [Message]) -> Void, callbackError: (status: Int?) -> Void) -> Void {
-        var url = self.address + "messages/all"
-        var parameters = Dictionary<String, AnyObject>()
+        let url = self.address + "messages/all"
+        let parameters = Dictionary<String, AnyObject>()
         
         Alamofire.request(.GET, URLString: url, parameters: parameters)
             .authenticate(usingCredential: credential)
@@ -42,7 +42,7 @@ class CalciferConnector: NSObject {
                 }
                 else {
                     //log.debug("Success: \(url)")
-                    var json = JSON(json!)
+                    let json = JSON(json!)
                     
                     self.status = ConnectorStatus.Ok
                     
@@ -57,7 +57,7 @@ class CalciferConnector: NSObject {
     }
     
     func setAllAsRead(ids: [String], callbackError: (status: Int?) -> Void) {
-        var url = self.address + "messages/setasread"
+        let url = self.address + "messages/setasread"
         var parameters = Dictionary<String, AnyObject>()
         parameters["ids"] = ids
         

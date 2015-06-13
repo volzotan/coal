@@ -22,19 +22,19 @@ class MessageUtil: NSObject {
         dateFormatter.dateFormat = dateFormat
         dateFormatter.timeZone = NSTimeZone.localTimeZone()
         
-        for (index, jsonmsg): (String, JSON) in json {
-            var mid: String = jsonmsg["message"]["mid"].stringValue
-            var payload: String = jsonmsg["message"]["payload"].stringValue
+        for (_, jsonmsg): (String, JSON) in json {
+            let mid: String = jsonmsg["message"]["mid"].stringValue
+            let payload: String = jsonmsg["message"]["payload"].stringValue
             
-            var priority: String = jsonmsg["message"]["priority"].stringValue
-            var status: String = jsonmsg["message"]["status"].stringValue
+            let priority: String = jsonmsg["message"]["priority"].stringValue
+            let status: String = jsonmsg["message"]["status"].stringValue
             
-            var add_time = dateFormatter.dateFromString(jsonmsg["add_time"].stringValue)
-            var update_time = dateFormatter.dateFromString(jsonmsg["update_time"].stringValue)
+            let add_time = dateFormatter.dateFromString(jsonmsg["add_time"].stringValue)
+            let update_time = dateFormatter.dateFromString(jsonmsg["update_time"].stringValue)
             
-            var sender: String = jsonmsg["sender"].stringValue
+            let sender: String = jsonmsg["sender"].stringValue
             
-            var msg = Message(mid: mid, payload: payload)
+            let msg = Message(mid: mid, payload: payload)
             
             if (Message.Priority(rawValue: priority) != nil) {
                 msg.priority = Message.Priority(rawValue: priority)!
