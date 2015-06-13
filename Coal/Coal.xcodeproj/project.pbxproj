@@ -11,7 +11,6 @@
 		DA2E08851B2CB75300D05F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08841B2CB75300D05F23 /* ViewController.swift */; };
 		DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E08861B2CB75300D05F23 /* Main.storyboard */; };
 		DA2E088B1B2CB75300D05F23 /* Coal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */; };
-		DA2E088D1B2CB75300D05F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2E088C1B2CB75300D05F23 /* Assets.xcassets */; };
 		DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */; };
 		DA2E089B1B2CB75300D05F23 /* CoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E089A1B2CB75300D05F23 /* CoalTests.swift */; };
 		DA2E08A61B2CB75300D05F23 /* CoalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08A51B2CB75300D05F23 /* CoalUITests.swift */; };
@@ -27,6 +26,7 @@
 		DA2E09091B2CBB4F00D05F23 /* MessageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */; };
 		DA2E090A1B2CBB4F00D05F23 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */; };
 		DA2E090B1B2CBB4F00D05F23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */; };
+		DA2E090D1B2CC60300D05F23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2E090C1B2CC60300D05F23 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,6 @@
 		DA2E08841B2CB75300D05F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA2E08871B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA2E088A1B2CB75300D05F23 /* Coal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coal.xcdatamodel; sourceTree = "<group>"; };
-		DA2E088C1B2CB75300D05F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2E088F1B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2E08911B2CB75300D05F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2E08961B2CB75300D05F23 /* CoalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +155,7 @@
 		DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUtil.swift; sourceTree = "<group>"; };
 		DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DA2E090C1B2CC60300D05F23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,8 +220,8 @@
 				DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */,
 				DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */,
 				DA2E08841B2CB75300D05F23 /* ViewController.swift */,
+				DA2E090C1B2CC60300D05F23 /* Images.xcassets */,
 				DA2E08861B2CB75300D05F23 /* Main.storyboard */,
-				DA2E088C1B2CB75300D05F23 /* Assets.xcassets */,
 				DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */,
 				DA2E08911B2CB75300D05F23 /* Info.plist */,
 				DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */,
@@ -444,8 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2E090D1B2CC60300D05F23 /* Images.xcassets in Resources */,
 				DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */,
-				DA2E088D1B2CB75300D05F23 /* Assets.xcassets in Resources */,
 				DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
