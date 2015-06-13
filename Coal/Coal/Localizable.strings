@@ -1,0 +1,12 @@
+/* 
+  en.strings
+  Coal
+
+  Created by Christopher Getschmann on 07.06.15.
+  Copyright (c) 2015 Christopher Getschmann. All rights reserved.
+*/
+
+"alert.unauthorized.title" = "Unauthorized";
+"alert.unauthorized.body" = "wrong username / password";
+
+"alert.dismiss" = "dismiss";

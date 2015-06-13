@@ -1,0 +1,6 @@
+[submodule "Coal/Alamofire"]
+	path = Coal/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Coal/SwiftyJSON"]
+	path = Coal/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git

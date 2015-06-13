@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA2E08831B2CB75300D05F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08821B2CB75300D05F23 /* AppDelegate.swift */; };
+		DA2E08851B2CB75300D05F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08841B2CB75300D05F23 /* ViewController.swift */; };
+		DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E08861B2CB75300D05F23 /* Main.storyboard */; };
+		DA2E088B1B2CB75300D05F23 /* Coal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */; };
+		DA2E088D1B2CB75300D05F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2E088C1B2CB75300D05F23 /* Assets.xcassets */; };
+		DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */; };
+		DA2E089B1B2CB75300D05F23 /* CoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E089A1B2CB75300D05F23 /* CoalTests.swift */; };
+		DA2E08A61B2CB75300D05F23 /* CoalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08A51B2CB75300D05F23 /* CoalUITests.swift */; };
+		DA2E08EB1B2CB94000D05F23 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E08D91B2CB8E000D05F23 /* SwiftyJSON.framework */; };
+		DA2E08EC1B2CB94000D05F23 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E08D91B2CB8E000D05F23 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA2E08F01B2CB94600D05F23 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E08BB1B2CB8C600D05F23 /* Alamofire.framework */; };
+		DA2E08F11B2CB94600D05F23 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E08BB1B2CB8C600D05F23 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA2E08F71B2CBB3E00D05F23 /* CalciferConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08F61B2CBB3E00D05F23 /* CalciferConnector.swift */; };
+		DA2E08FF1B2CBB4500D05F23 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08FE1B2CBB4500D05F23 /* Configuration.swift */; };
+		DA2E09061B2CBB4F00D05F23 /* Localstore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09001B2CBB4F00D05F23 /* Localstore.swift */; };
+		DA2E09071B2CBB4F00D05F23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09011B2CBB4F00D05F23 /* Message.swift */; };
+		DA2E09081B2CBB4F00D05F23 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09021B2CBB4F00D05F23 /* MessageTableViewCell.swift */; };
+		DA2E09091B2CBB4F00D05F23 /* MessageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */; };
+		DA2E090A1B2CBB4F00D05F23 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */; };
+		DA2E090B1B2CBB4F00D05F23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA2E08971B2CB75300D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08771B2CB75300D05F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2E087E1B2CB75300D05F23;
+			remoteInfo = Coal;
+		};
+		DA2E08A21B2CB75300D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08771B2CB75300D05F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2E087E1B2CB75300D05F23;
+			remoteInfo = Coal;
+		};
+		DA2E08BA1B2CB8C600D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		DA2E08BC1B2CB8C600D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		DA2E08BE1B2CB8C600D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		DA2E08C01B2CB8C600D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		DA2E08D81B2CB8E000D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		DA2E08DA1B2CB8E000D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		DA2E08DC1B2CB8E000D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		DA2E08DE1B2CB8E000D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		DA2E08ED1B2CB94000D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		DA2E08F21B2CB94600D05F23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA2E08EF1B2CB94000D05F23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA2E08EC1B2CB94000D05F23 /* SwiftyJSON.framework in Embed Frameworks */,
+				DA2E08F11B2CB94600D05F23 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA2E087F1B2CB75300D05F23 /* Coal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2E08821B2CB75300D05F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA2E08841B2CB75300D05F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA2E08871B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA2E088A1B2CB75300D05F23 /* Coal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coal.xcdatamodel; sourceTree = "<group>"; };
+		DA2E088C1B2CB75300D05F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2E088F1B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA2E08911B2CB75300D05F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2E08961B2CB75300D05F23 /* CoalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2E089A1B2CB75300D05F23 /* CoalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalTests.swift; sourceTree = "<group>"; };
+		DA2E089C1B2CB75300D05F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2E08A11B2CB75300D05F23 /* CoalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2E08A51B2CB75300D05F23 /* CoalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalUITests.swift; sourceTree = "<group>"; };
+		DA2E08A71B2CB75300D05F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = Alamofire/../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		DA2E08F61B2CBB3E00D05F23 /* CalciferConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalciferConnector.swift; sourceTree = "<group>"; };
+		DA2E08FE1B2CBB4500D05F23 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DA2E09001B2CBB4F00D05F23 /* Localstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localstore.swift; sourceTree = "<group>"; };
+		DA2E09011B2CBB4F00D05F23 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		DA2E09021B2CBB4F00D05F23 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUtil.swift; sourceTree = "<group>"; };
+		DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA2E087C1B2CB75300D05F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2E08EB1B2CB94000D05F23 /* SwiftyJSON.framework in Frameworks */,
+				DA2E08F01B2CB94600D05F23 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E08931B2CB75300D05F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E089E1B2CB75300D05F23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA2E08761B2CB75300D05F23 = {
+			isa = PBXGroup;
+			children = (
+				DA2E08811B2CB75300D05F23 /* Coal */,
+				DA2E08991B2CB75300D05F23 /* CoalTests */,
+				DA2E08A41B2CB75300D05F23 /* CoalUITests */,
+				DA2E08801B2CB75300D05F23 /* Products */,
+				DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */,
+				DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2E08801B2CB75300D05F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E087F1B2CB75300D05F23 /* Coal.app */,
+				DA2E08961B2CB75300D05F23 /* CoalTests.xctest */,
+				DA2E08A11B2CB75300D05F23 /* CoalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2E08811B2CB75300D05F23 /* Coal */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E08821B2CB75300D05F23 /* AppDelegate.swift */,
+				DA2E08F61B2CBB3E00D05F23 /* CalciferConnector.swift */,
+				DA2E08FE1B2CBB4500D05F23 /* Configuration.swift */,
+				DA2E09001B2CBB4F00D05F23 /* Localstore.swift */,
+				DA2E09011B2CBB4F00D05F23 /* Message.swift */,
+				DA2E09021B2CBB4F00D05F23 /* MessageTableViewCell.swift */,
+				DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */,
+				DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */,
+				DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */,
+				DA2E08841B2CB75300D05F23 /* ViewController.swift */,
+				DA2E08861B2CB75300D05F23 /* Main.storyboard */,
+				DA2E088C1B2CB75300D05F23 /* Assets.xcassets */,
+				DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */,
+				DA2E08911B2CB75300D05F23 /* Info.plist */,
+				DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */,
+			);
+			path = Coal;
+			sourceTree = "<group>";
+		};
+		DA2E08991B2CB75300D05F23 /* CoalTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E089A1B2CB75300D05F23 /* CoalTests.swift */,
+				DA2E089C1B2CB75300D05F23 /* Info.plist */,
+			);
+			path = CoalTests;
+			sourceTree = "<group>";
+		};
+		DA2E08A41B2CB75300D05F23 /* CoalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E08A51B2CB75300D05F23 /* CoalUITests.swift */,
+				DA2E08A71B2CB75300D05F23 /* Info.plist */,
+			);
+			path = CoalUITests;
+			sourceTree = "<group>";
+		};
+		DA2E08B41B2CB8C600D05F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E08BB1B2CB8C600D05F23 /* Alamofire.framework */,
+				DA2E08BD1B2CB8C600D05F23 /* Alamofire.framework */,
+				DA2E08BF1B2CB8C600D05F23 /* Alamofire iOS Tests.xctest */,
+				DA2E08C11B2CB8C600D05F23 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2E08D21B2CB8DF00D05F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E08D91B2CB8E000D05F23 /* SwiftyJSON.framework */,
+				DA2E08DB1B2CB8E000D05F23 /* SwiftyJSON iOS Tests.xctest */,
+				DA2E08DD1B2CB8E000D05F23 /* SwiftyJSON.framework */,
+				DA2E08DF1B2CB8E000D05F23 /* SwiftyJSON OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA2E087E1B2CB75300D05F23 /* Coal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2E08AA1B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "Coal" */;
+			buildPhases = (
+				DA2E087B1B2CB75300D05F23 /* Sources */,
+				DA2E087C1B2CB75300D05F23 /* Frameworks */,
+				DA2E087D1B2CB75300D05F23 /* Resources */,
+				DA2E08EF1B2CB94000D05F23 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2E08EE1B2CB94000D05F23 /* PBXTargetDependency */,
+				DA2E08F31B2CB94600D05F23 /* PBXTargetDependency */,
+			);
+			name = Coal;
+			productName = Coal;
+			productReference = DA2E087F1B2CB75300D05F23 /* Coal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA2E08951B2CB75300D05F23 /* CoalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2E08AD1B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "CoalTests" */;
+			buildPhases = (
+				DA2E08921B2CB75300D05F23 /* Sources */,
+				DA2E08931B2CB75300D05F23 /* Frameworks */,
+				DA2E08941B2CB75300D05F23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2E08981B2CB75300D05F23 /* PBXTargetDependency */,
+			);
+			name = CoalTests;
+			productName = CoalTests;
+			productReference = DA2E08961B2CB75300D05F23 /* CoalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA2E08A01B2CB75300D05F23 /* CoalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2E08B01B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "CoalUITests" */;
+			buildPhases = (
+				DA2E089D1B2CB75300D05F23 /* Sources */,
+				DA2E089E1B2CB75300D05F23 /* Frameworks */,
+				DA2E089F1B2CB75300D05F23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2E08A31B2CB75300D05F23 /* PBXTargetDependency */,
+			);
+			name = CoalUITests;
+			productName = CoalUITests;
+			productReference = DA2E08A11B2CB75300D05F23 /* CoalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2E08771B2CB75300D05F23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Christopher Getschmann";
+				TargetAttributes = {
+					DA2E087E1B2CB75300D05F23 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DA2E08951B2CB75300D05F23 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DA2E087E1B2CB75300D05F23;
+					};
+					DA2E08A01B2CB75300D05F23 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DA2E087E1B2CB75300D05F23;
+					};
+				};
+			};
+			buildConfigurationList = DA2E087A1B2CB75300D05F23 /* Build configuration list for PBXProject "Coal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA2E08761B2CB75300D05F23;
+			productRefGroup = DA2E08801B2CB75300D05F23 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA2E08B41B2CB8C600D05F23 /* Products */;
+					ProjectRef = DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = DA2E08D21B2CB8DF00D05F23 /* Products */;
+					ProjectRef = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DA2E087E1B2CB75300D05F23 /* Coal */,
+				DA2E08951B2CB75300D05F23 /* CoalTests */,
+				DA2E08A01B2CB75300D05F23 /* CoalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA2E08BB1B2CB8C600D05F23 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DA2E08BA1B2CB8C600D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08BD1B2CB8C600D05F23 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = DA2E08BC1B2CB8C600D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08BF1B2CB8C600D05F23 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = DA2E08BE1B2CB8C600D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08C11B2CB8C600D05F23 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = DA2E08C01B2CB8C600D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08D91B2CB8E000D05F23 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = DA2E08D81B2CB8E000D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08DB1B2CB8E000D05F23 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = DA2E08DA1B2CB8E000D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08DD1B2CB8E000D05F23 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = DA2E08DC1B2CB8E000D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA2E08DF1B2CB8E000D05F23 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = DA2E08DE1B2CB8E000D05F23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA2E087D1B2CB75300D05F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */,
+				DA2E088D1B2CB75300D05F23 /* Assets.xcassets in Resources */,
+				DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E08941B2CB75300D05F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E089F1B2CB75300D05F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA2E087B1B2CB75300D05F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2E08851B2CB75300D05F23 /* ViewController.swift in Sources */,
+				DA2E08FF1B2CBB4500D05F23 /* Configuration.swift in Sources */,
+				DA2E090B1B2CBB4F00D05F23 /* SettingsViewController.swift in Sources */,
+				DA2E09091B2CBB4F00D05F23 /* MessageUtil.swift in Sources */,
+				DA2E088B1B2CB75300D05F23 /* Coal.xcdatamodeld in Sources */,
+				DA2E08F71B2CBB3E00D05F23 /* CalciferConnector.swift in Sources */,
+				DA2E08831B2CB75300D05F23 /* AppDelegate.swift in Sources */,
+				DA2E09081B2CBB4F00D05F23 /* MessageTableViewCell.swift in Sources */,
+				DA2E090A1B2CBB4F00D05F23 /* NavigationController.swift in Sources */,
+				DA2E09061B2CBB4F00D05F23 /* Localstore.swift in Sources */,
+				DA2E09071B2CBB4F00D05F23 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E08921B2CB75300D05F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2E089B1B2CB75300D05F23 /* CoalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2E089D1B2CB75300D05F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2E08A61B2CB75300D05F23 /* CoalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA2E08981B2CB75300D05F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2E087E1B2CB75300D05F23 /* Coal */;
+			targetProxy = DA2E08971B2CB75300D05F23 /* PBXContainerItemProxy */;
+		};
+		DA2E08A31B2CB75300D05F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2E087E1B2CB75300D05F23 /* Coal */;
+			targetProxy = DA2E08A21B2CB75300D05F23 /* PBXContainerItemProxy */;
+		};
+		DA2E08EE1B2CB94000D05F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = DA2E08ED1B2CB94000D05F23 /* PBXContainerItemProxy */;
+		};
+		DA2E08F31B2CB94600D05F23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = DA2E08F21B2CB94600D05F23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA2E08861B2CB75300D05F23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2E08871B2CB75300D05F23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2E088F1B2CB75300D05F23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA2E08A81B2CB75300D05F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA2E08A91B2CB75300D05F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA2E08AB1B2CB75300D05F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Coal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.Coal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA2E08AC1B2CB75300D05F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Coal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.Coal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA2E08AE1B2CB75300D05F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.CoalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coal.app/Coal";
+			};
+			name = Debug;
+		};
+		DA2E08AF1B2CB75300D05F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.CoalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coal.app/Coal";
+			};
+			name = Release;
+		};
+		DA2E08B11B2CB75300D05F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.CoalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Coal;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DA2E08B21B2CB75300D05F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CoalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.volzo.CoalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Coal;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2E087A1B2CB75300D05F23 /* Build configuration list for PBXProject "Coal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2E08A81B2CB75300D05F23 /* Debug */,
+				DA2E08A91B2CB75300D05F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2E08AA1B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "Coal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2E08AB1B2CB75300D05F23 /* Debug */,
+				DA2E08AC1B2CB75300D05F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2E08AD1B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "CoalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2E08AE1B2CB75300D05F23 /* Debug */,
+				DA2E08AF1B2CB75300D05F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2E08B01B2CB75300D05F23 /* Build configuration list for PBXNativeTarget "CoalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2E08B11B2CB75300D05F23 /* Debug */,
+				DA2E08B21B2CB75300D05F23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA2E088A1B2CB75300D05F23 /* Coal.xcdatamodel */,
+			);
+			currentVersion = DA2E088A1B2CB75300D05F23 /* Coal.xcdatamodel */;
+			path = Coal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA2E08771B2CB75300D05F23 /* Project object */;
+}
