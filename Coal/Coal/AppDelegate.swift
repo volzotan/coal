@@ -34,12 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .stringByTrimmingCharactersInSet( characterSet )
             .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
         
-        print( deviceTokenString, appendNewline: false )
+        print(deviceTokenString)
     }
 
     func application( application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         
-        print( error.localizedDescription, appendNewline: false )
+        print(error.localizedDescription)
     }
 
 

@@ -32,6 +32,8 @@ class ViewController: UITableViewController {
         refreshControl.addTarget(self, action: Selector(), forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
         self.refreshControl = refreshControl
+        
+        loadDataAndRefresh()
     }
     
     func refreshListener(notification: NSNotification){
