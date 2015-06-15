@@ -87,10 +87,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Server Address (http://foo.bar:5000)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-dC-G6U">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Server Address (http://foo.bar:5000)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZqP-Jh-78F">
                                                     <rect key="frame" x="8" y="7" width="304" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Haf-Qg-W3d" id="atG-uG-ciS"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -116,6 +119,9 @@
                                                     <rect key="frame" x="162" y="7" width="150" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Haf-Qg-W3d" id="Bsj-H7-2Ms"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -131,6 +137,9 @@
                                                     <rect key="frame" x="162" y="7" width="150" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Haf-Qg-W3d" id="lg0-Hf-uMI"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-ig-feo">
                                                     <rect key="frame" x="8" y="11" width="146" height="21"/>
@@ -150,6 +159,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="1h1-3a-sNO"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="ZqP-Jh-78F" id="tco-2e-I6N"/>
+                        <outlet property="passwordTextField" destination="csW-ZQ-gZR" id="Bk4-81-Pcj"/>
+                        <outlet property="usernameTextField" destination="5bS-6g-d9c" id="fvf-PC-HKo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLk-QO-if7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
