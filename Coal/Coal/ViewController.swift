@@ -24,8 +24,10 @@ class ViewController: UITableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshListener:", name:"RefreshUI", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadAndRefreshListener:", name:"LoadAndRefreshUI", object: nil)
         
-        addExampleMessages()
+        // remove gap on the left side of the cell separator
+        messageList.separatorInset = UIEdgeInsetsZero
         
+        addExampleMessages()
         fireNotification()
         
         let refreshControl = UIRefreshControl()
@@ -103,6 +105,9 @@ class ViewController: UITableViewController {
             cell = MessageTableViewCell(style: .Default, reuseIdentifier: cellIdentifier);
         }
         
+        // remove gap on the left side of the cell separator
+        cell!.layoutMargins = UIEdgeInsetsZero
+        
         cell!.populate(self.localstore.getAtPosition(indexPath.row)!)
         
         return cell!
@@ -149,6 +154,7 @@ class ViewController: UITableViewController {
         let msg1 = Message(mid: "111", payload: "internal message internal message internal internal message internal internal message internal internal message internal")
         let msg2 = Message(mid: "112", payload: "internal message internal message internal internal message internal ")
         let msg3 = Message(mid: "113", payload: "silent internal message")
+        let msg4 = Message(mid: "114", payload: "silent internal message")
         
         msg1.add_time = NSDate()
         msg2.add_time = NSDate()
@@ -159,6 +165,7 @@ class ViewController: UITableViewController {
         self.localstore.add(msg1)
         self.localstore.add(msg2)
         self.localstore.add(msg3)
+        self.localstore.add(msg4)
     }
 
 }
