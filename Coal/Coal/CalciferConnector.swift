@@ -17,13 +17,27 @@ enum ConnectorStatus {
 class CalciferConnector: NSObject {
     
     static let instance = CalciferConnector()
+    
+    let configuration = Configuration()
 
-    let address = "http://localhost:5000/"
-    let credential = NSURLCredential(user: "admin", password: "admin", persistence: .ForSession)
+    var address: String = "https://localhost:5000/"
+    var credential: NSURLCredential = NSURLCredential(user: "admin", password: "admin", persistence: .ForSession)
     
     var status: ConnectorStatus = ConnectorStatus.Undefined {
         didSet {
             NSNotificationCenter.defaultCenter().postNotificationName("RefreshUI", object: nil)
+        }
+    }
+    
+    override init() {
+        super.init()
+        self.reloadConfigurationData()
+    }
+    
+    func reloadConfigurationData() {
+        self.address = configuration.server_address!
+        if (configuration.server_username != nil && configuration.server_password != nil) {
+            self.credential = NSURLCredential(user: configuration.server_username!, password: configuration.server_password!, persistence: .ForSession)
         }
     }
     
@@ -36,6 +50,7 @@ class CalciferConnector: NSObject {
             .responseJSON { (req, res, json, error) in
                 if (error != nil) {
                     //log.error("Error: \(error)")
+                    print(error)
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)

@@ -14,14 +14,30 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    let configuration = Configuration()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addressTextField.text = configuration.server_address
+        usernameTextField.text = configuration.server_username
+        passwordTextField.text = configuration.server_password
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        print("foo")
         self.view.endEditing(true)
         return false
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        save()
+    }
+    
+    func save() {
+        configuration.server_address = addressTextField.text!
+        configuration.server_username = usernameTextField.text!
+        configuration.server_password = passwordTextField.text!
+        configuration.save()
     }
     
 }
