@@ -25,9 +25,9 @@ class Configuration: NSObject {
     private let server_username_key = "SERVER_USERNAME"
     private let server_password_key = "SERVER_PASSWORD"
     
-    var server_address: String? = ""
-    var server_username: String? = ""
-    var server_password: String? = ""
+    var server_address: String = ""
+    var server_username: String = ""
+    var server_password: String = ""
     
     override init() {
         super.init()
@@ -43,16 +43,16 @@ class Configuration: NSObject {
     }
     
     func load() {
-        if (server_address != nil) {
-            self.server_address = defaults.stringForKey(server_address_key)
+        if (defaults.stringForKey(server_address_key) != nil) {
+            self.server_address = defaults.stringForKey(server_address_key)!
         }
         
-        if (server_username != nil) {
-            self.server_username = defaults.stringForKey(server_username_key)
+        if (defaults.stringForKey(server_username_key) != nil) {
+            self.server_username = defaults.stringForKey(server_username_key)!
         }
         
-        if (server_password != nil) {
-            self.server_password = defaults.stringForKey(server_password_key)
+        if (defaults.stringForKey(server_password_key) != nil) {
+            self.server_password = defaults.stringForKey(server_password_key)!
         }
     }
     

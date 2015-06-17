@@ -35,10 +35,8 @@ class CalciferConnector: NSObject {
     }
     
     func reloadConfigurationData() {
-        self.address = configuration.server_address!
-        if (configuration.server_username != nil && configuration.server_password != nil) {
-            self.credential = NSURLCredential(user: configuration.server_username!, password: configuration.server_password!, persistence: .ForSession)
-        }
+        self.address = configuration.server_address
+        self.credential = NSURLCredential(user: configuration.server_username, password: configuration.server_password, persistence: .ForSession)
     }
     
     func getAllMessages(callbackSuccess: (messages: [Message]) -> Void, callbackError: (status: Int?) -> Void) -> Void {
