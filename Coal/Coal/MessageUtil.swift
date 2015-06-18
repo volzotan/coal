@@ -8,7 +8,7 @@
 
 import UIKit
 
-//import XCGLogger
+import XCGLogger
 import SwiftyJSON
 
 class MessageUtil: NSObject {
@@ -39,25 +39,25 @@ class MessageUtil: NSObject {
             if (Message.Priority(rawValue: priority) != nil) {
                 msg.priority = Message.Priority(rawValue: priority)!
             } else {
-                //log.error("parsing priority failed. mid: \(mid)")
+                log.error("parsing priority failed. mid: \(mid)")
             }
             
             if (Message.Status(rawValue: status) != nil) {
                 msg.status = Message.Status(rawValue: status)!
             } else {
-                //log.error("parsing status failed. mid: \(mid)")
+                log.error("parsing status failed. mid: \(mid)")
             }
             
             msg.add_time = add_time
             msg.update_time = update_time
             
-            print(add_time)
-            //log.debug(msg.description)
+            //print(add_time)
+            log.debug(msg.description)
             
             returnList += [msg]
         }
         
-        //log.debug("parsed \(returnList.count) messages")
+        log.debug("parsed \(returnList.count) messages")
         return returnList
     }
 

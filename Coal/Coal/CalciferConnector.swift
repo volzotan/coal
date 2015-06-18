@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import XCGLogger
 
 enum ConnectorStatus {
     case Undefined, Ok, Error, Unreachable
@@ -47,14 +48,13 @@ class CalciferConnector: NSObject {
             .authenticate(usingCredential: credential)
             .responseJSON { (req, res, json, error) in
                 if (error != nil) {
-                    //log.error("Error: \(error)")
-                    print(error)
+                    log.error("Error: \(error)")
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)
                 }
                 else {
-                    //log.debug("Success: \(url)")
+                    log.debug("Success: \(url)")
                     let json = JSON(json!)
                     
                     self.status = ConnectorStatus.Ok
@@ -62,7 +62,7 @@ class CalciferConnector: NSObject {
                     if (json.count > 0) {
                         callbackSuccess(messages: MessageUtil().parseJSON(json))
                     } else {
-                        //log.debug("no messages received")
+                        log.debug("no messages received")
                         callbackSuccess(messages: [])
                     }
                 }
@@ -78,13 +78,13 @@ class CalciferConnector: NSObject {
             .authenticate(usingCredential: credential)
             .response { (req, res, data, error) in
                 if (error != nil || res?.statusCode != 200) {
-                    //log.error("Error: \(error)")
+                    log.error("Error: \(error)")
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)
                 }
                 else {
-                    //log.debug("Success: \(url)")
+                    log.debug("Success: \(url)")
                 }
         }
     }

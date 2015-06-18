@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import XCGLogger
+import XCGLogger
 import SwiftyJSON
 import Alamofire
 
@@ -147,7 +147,7 @@ class ViewController: UITableViewController {
         notification.category = "TODO_CATEGORY"
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
         
-        //log.debug("notification")
+        log.debug("notification")
     }
     
     func addExampleMessages() {

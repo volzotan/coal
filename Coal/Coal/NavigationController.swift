@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import XCGLogger
+import XCGLogger
 
 class NavigationController: UINavigationController {
     
@@ -38,7 +38,7 @@ class NavigationController: UINavigationController {
         case ConnectorStatus.Unreachable:
             statusBar.progressTintColor = Configuration.statusBarColorUnreachable
         default:
-            //log.error("illegal state Connector Status")
+            log.error("illegal state Connector Status")
             break
         }
     }
