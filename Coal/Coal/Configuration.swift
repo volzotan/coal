@@ -34,7 +34,11 @@ class Configuration: NSObject {
         self.load()
     }
     
-    func save() -> Void {
+    func save() -> Void {        
+        if server_address[server_address.endIndex.predecessor()] != "/" {
+            server_address = server_address + "/"
+        }
+        
         defaults.setObject(server_address, forKey: server_address_key)
         defaults.setObject(server_username, forKey: server_username_key)
         defaults.setObject(server_password, forKey: server_password_key)
