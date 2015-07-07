@@ -28,7 +28,6 @@ class ViewController: UITableViewController {
         messageList.separatorInset = UIEdgeInsetsZero
         
         addExampleMessages()
-        fireNotification()
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector(), forControlEvents: UIControlEvents.ValueChanged)
@@ -135,20 +134,20 @@ class ViewController: UITableViewController {
         label.sizeToFit()
         return label.frame.height
     }
-    
-    func fireNotification() {
-        // create a corresponding local notification
-        let notification = UILocalNotification()
-        notification.alertBody = "Todo Item Is Overdue" // text that will be displayed in the notification
-        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-        notification.fireDate = NSDate() // todo item due date (when notification will be fired)
-        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
-        notification.userInfo = ["UUID": 126] // assign a unique identifier to the notification so that we can retrieve it later
-        notification.category = "TODO_CATEGORY"
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        
-        log.debug("notification")
-    }
+  
+//    func fireNotification() {
+//        // create a corresponding local notification
+//        let notification = UILocalNotification()
+//        notification.alertBody = "Todo Item Is Overdue" // text that will be displayed in the notification
+//        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+//        notification.fireDate = NSDate() // todo item due date (when notification will be fired)
+//        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+//        notification.userInfo = ["UUID": 126] // assign a unique identifier to the notification so that we can retrieve it later
+//        notification.category = "TODO_CATEGORY"
+//        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+//        
+//        log.debug("notification")
+//    }
     
     func addExampleMessages() {
         let msg1 = Message(mid: "111", payload: "internal message internal message internal internal message internal internal message internal internal message internal")
