@@ -16,7 +16,7 @@ class Localstore: NSObject {
         if !contains(message.mid) {
             messagestore[message.mid] = message
         } else {
-            //log.debug("adding failed, duplicate mid: \(message.mid)")
+            log.debug("adding failed, duplicate mid: \(message.mid)")
         }
     }
     

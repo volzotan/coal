@@ -11,7 +11,6 @@
 		DA2E08851B2CB75300D05F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08841B2CB75300D05F23 /* ViewController.swift */; };
 		DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E08861B2CB75300D05F23 /* Main.storyboard */; };
 		DA2E088B1B2CB75300D05F23 /* Coal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */; };
-		DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */; };
 		DA2E089B1B2CB75300D05F23 /* CoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E089A1B2CB75300D05F23 /* CoalTests.swift */; };
 		DA2E08A61B2CB75300D05F23 /* CoalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E08A51B2CB75300D05F23 /* CoalUITests.swift */; };
 		DA2E08EB1B2CB94000D05F23 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E08D91B2CB8E000D05F23 /* SwiftyJSON.framework */; };
@@ -27,6 +26,8 @@
 		DA2E090A1B2CBB4F00D05F23 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */; };
 		DA2E090B1B2CBB4F00D05F23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */; };
 		DA2E090D1B2CC60300D05F23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2E090C1B2CC60300D05F23 /* Images.xcassets */; };
+		DAB1FADF1B3337B000A154F6 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1FAD91B33379300A154F6 /* XCGLogger.framework */; };
+		DAB1FAE01B3337B000A154F6 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1FAD91B33379300A154F6 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,34 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		DAB1FAD81B33379300A154F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE4519D76F280068C3A7;
+			remoteInfo = "XCGLogger (iOS)";
+		};
+		DAB1FADA1B33379300A154F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 554DF41719D76FE7005708BE;
+			remoteInfo = "XCGLogger (OS X)";
+		};
+		DAB1FADC1B33379300A154F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE5019D76F280068C3A7;
+			remoteInfo = XCGLoggerTests;
+		};
+		DAB1FAE11B3337B000A154F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E3EE4419D76F280068C3A7;
+			remoteInfo = "XCGLogger (iOS)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +154,7 @@
 			files = (
 				DA2E08EC1B2CB94000D05F23 /* SwiftyJSON.framework in Embed Frameworks */,
 				DA2E08F11B2CB94600D05F23 /* Alamofire.framework in Embed Frameworks */,
+				DAB1FAE01B3337B000A154F6 /* XCGLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,11 +163,10 @@
 
 /* Begin PBXFileReference section */
 		DA2E087F1B2CB75300D05F23 /* Coal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA2E08821B2CB75300D05F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA2E08841B2CB75300D05F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA2E08821B2CB75300D05F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DA2E08841B2CB75300D05F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA2E08871B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA2E088A1B2CB75300D05F23 /* Coal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coal.xcdatamodel; sourceTree = "<group>"; };
-		DA2E088F1B2CB75300D05F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2E08911B2CB75300D05F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2E08961B2CB75300D05F23 /* CoalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2E089A1B2CB75300D05F23 /* CoalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalTests.swift; sourceTree = "<group>"; };
@@ -149,13 +178,14 @@
 		DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = Alamofire/../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		DA2E08F61B2CBB3E00D05F23 /* CalciferConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalciferConnector.swift; sourceTree = "<group>"; };
 		DA2E08FE1B2CBB4500D05F23 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		DA2E09001B2CBB4F00D05F23 /* Localstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localstore.swift; sourceTree = "<group>"; };
+		DA2E09001B2CBB4F00D05F23 /* Localstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Localstore.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA2E09011B2CBB4F00D05F23 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DA2E09021B2CBB4F00D05F23 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
-		DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUtil.swift; sourceTree = "<group>"; };
-		DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MessageUtil.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = NavigationController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA2E090C1B2CC60300D05F23 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = XCGLogger/XCGLogger/Library/XCGLogger.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +195,7 @@
 			files = (
 				DA2E08EB1B2CB94000D05F23 /* SwiftyJSON.framework in Frameworks */,
 				DA2E08F01B2CB94600D05F23 /* Alamofire.framework in Frameworks */,
+				DAB1FADF1B3337B000A154F6 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +224,7 @@
 				DA2E08A41B2CB75300D05F23 /* CoalUITests */,
 				DA2E08801B2CB75300D05F23 /* Products */,
 				DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */,
+				DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */,
 				DA2E08B31B2CB8C600D05F23 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -211,18 +243,17 @@
 			isa = PBXGroup;
 			children = (
 				DA2E08821B2CB75300D05F23 /* AppDelegate.swift */,
+				DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */,
+				DA2E08841B2CB75300D05F23 /* ViewController.swift */,
+				DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */,
 				DA2E08F61B2CBB3E00D05F23 /* CalciferConnector.swift */,
 				DA2E08FE1B2CBB4500D05F23 /* Configuration.swift */,
+				DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */,
 				DA2E09001B2CBB4F00D05F23 /* Localstore.swift */,
 				DA2E09011B2CBB4F00D05F23 /* Message.swift */,
 				DA2E09021B2CBB4F00D05F23 /* MessageTableViewCell.swift */,
-				DA2E09031B2CBB4F00D05F23 /* MessageUtil.swift */,
-				DA2E09041B2CBB4F00D05F23 /* NavigationController.swift */,
-				DA2E09051B2CBB4F00D05F23 /* SettingsViewController.swift */,
-				DA2E08841B2CB75300D05F23 /* ViewController.swift */,
 				DA2E090C1B2CC60300D05F23 /* Images.xcassets */,
 				DA2E08861B2CB75300D05F23 /* Main.storyboard */,
-				DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */,
 				DA2E08911B2CB75300D05F23 /* Info.plist */,
 				DA2E08891B2CB75300D05F23 /* Coal.xcdatamodeld */,
 			);
@@ -269,6 +300,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DAB1FAD31B33379300A154F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB1FAD91B33379300A154F6 /* XCGLogger.framework */,
+				DAB1FADB1B33379300A154F6 /* XCGLogger.framework */,
+				DAB1FADD1B33379300A154F6 /* XCGLoggerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +327,7 @@
 			dependencies = (
 				DA2E08EE1B2CB94000D05F23 /* PBXTargetDependency */,
 				DA2E08F31B2CB94600D05F23 /* PBXTargetDependency */,
+				DAB1FAE21B3337B000A154F6 /* PBXTargetDependency */,
 			);
 			name = Coal;
 			productName = Coal;
@@ -334,6 +376,7 @@
 		DA2E08771B2CB75300D05F23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Christopher Getschmann";
 				TargetAttributes = {
@@ -370,6 +413,10 @@
 				{
 					ProductGroup = DA2E08D21B2CB8DF00D05F23 /* Products */;
 					ProjectRef = DA2E08D11B2CB8DF00D05F23 /* SwiftyJSON.xcodeproj */;
+				},
+				{
+					ProductGroup = DAB1FAD31B33379300A154F6 /* Products */;
+					ProjectRef = DAB1FAD21B33379300A154F6 /* XCGLogger.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -438,6 +485,27 @@
 			remoteRef = DA2E08DE1B2CB8E000D05F23 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DAB1FAD91B33379300A154F6 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = DAB1FAD81B33379300A154F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAB1FADB1B33379300A154F6 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = DAB1FADA1B33379300A154F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAB1FADD1B33379300A154F6 /* XCGLoggerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCGLoggerTests.xctest;
+			remoteRef = DAB1FADC1B33379300A154F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -446,7 +514,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2E090D1B2CC60300D05F23 /* Images.xcassets in Resources */,
-				DA2E08901B2CB75300D05F23 /* LaunchScreen.storyboard in Resources */,
 				DA2E08881B2CB75300D05F23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +592,11 @@
 			name = "Alamofire iOS";
 			targetProxy = DA2E08F21B2CB94600D05F23 /* PBXContainerItemProxy */;
 		};
+		DAB1FAE21B3337B000A154F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCGLogger (iOS)";
+			targetProxy = DAB1FAE11B3337B000A154F6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -534,14 +606,6 @@
 				DA2E08871B2CB75300D05F23 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DA2E088E1B2CB75300D05F23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA2E088F1B2CB75300D05F23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -632,6 +696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -648,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;

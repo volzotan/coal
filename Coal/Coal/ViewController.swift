@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import XCGLogger
+import XCGLogger
 import SwiftyJSON
 import Alamofire
 
@@ -24,14 +24,17 @@ class ViewController: UITableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshListener:", name:"RefreshUI", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadAndRefreshListener:", name:"LoadAndRefreshUI", object: nil)
         
-        addExampleMessages()
+        // remove gap on the left side of the cell separator
+        messageList.separatorInset = UIEdgeInsetsZero
         
-        fireNotification()
+        addExampleMessages()
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector(), forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
         self.refreshControl = refreshControl
+        
+        loadDataAndRefresh()
     }
     
     func refreshListener(notification: NSNotification){
@@ -101,6 +104,9 @@ class ViewController: UITableViewController {
             cell = MessageTableViewCell(style: .Default, reuseIdentifier: cellIdentifier);
         }
         
+        // remove gap on the left side of the cell separator
+        cell!.layoutMargins = UIEdgeInsetsZero
+        
         cell!.populate(self.localstore.getAtPosition(indexPath.row)!)
         
         return cell!
@@ -128,25 +134,26 @@ class ViewController: UITableViewController {
         label.sizeToFit()
         return label.frame.height
     }
-    
-    func fireNotification() {
-        // create a corresponding local notification
-        let notification = UILocalNotification()
-        notification.alertBody = "Todo Item Is Overdue" // text that will be displayed in the notification
-        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-        notification.fireDate = NSDate() // todo item due date (when notification will be fired)
-        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
-        notification.userInfo = ["UUID": 126] // assign a unique identifier to the notification so that we can retrieve it later
-        notification.category = "TODO_CATEGORY"
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        
-        //log.debug("notification")
-    }
+  
+//    func fireNotification() {
+//        // create a corresponding local notification
+//        let notification = UILocalNotification()
+//        notification.alertBody = "Todo Item Is Overdue" // text that will be displayed in the notification
+//        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+//        notification.fireDate = NSDate() // todo item due date (when notification will be fired)
+//        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+//        notification.userInfo = ["UUID": 126] // assign a unique identifier to the notification so that we can retrieve it later
+//        notification.category = "TODO_CATEGORY"
+//        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+//        
+//        log.debug("notification")
+//    }
     
     func addExampleMessages() {
-        let msg1 = Message(mid: "111", payload: "internal message internal message internal internal message internal internal message internal internal message internal")
-        let msg2 = Message(mid: "112", payload: "internal message internal message internal internal message internal ")
-        let msg3 = Message(mid: "113", payload: "silent internal message")
+        let msg1 = Message(mid: "111", payload: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.")
+        let msg2 = Message(mid: "112", payload: "At vero eos et accusam et justo duo dolores et ea rebum.")
+        let msg3 = Message(mid: "113", payload: "Stet clita kasd gubergren.")
+        let msg4 = Message(mid: "114", payload: "At vero eos et accusam")
         
         msg1.add_time = NSDate()
         msg2.add_time = NSDate()
@@ -154,9 +161,10 @@ class ViewController: UITableViewController {
         msg2.priority = Message.Priority.High
         msg1.priority = Message.Priority.Silent
         
-        self.localstore.add(msg1)
-        self.localstore.add(msg2)
-        self.localstore.add(msg3)
+//        self.localstore.add(msg1)
+//        self.localstore.add(msg2)
+//        self.localstore.add(msg3)
+//        self.localstore.add(msg4)
     }
 
 }

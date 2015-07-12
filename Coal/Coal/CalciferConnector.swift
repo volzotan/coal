@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import XCGLogger
 
 enum ConnectorStatus {
     case Undefined, Ok, Error, Unreachable
@@ -17,14 +18,26 @@ enum ConnectorStatus {
 class CalciferConnector: NSObject {
     
     static let instance = CalciferConnector()
+    
+    let configuration = Configuration()
 
-    let address = "http://localhost:5000/"
-    let credential = NSURLCredential(user: "admin", password: "admin", persistence: .ForSession)
+    var address: String = "https://localhost:5000/"
+    var credential: NSURLCredential = NSURLCredential(user: "admin", password: "admin", persistence: .ForSession)
     
     var status: ConnectorStatus = ConnectorStatus.Undefined {
         didSet {
             NSNotificationCenter.defaultCenter().postNotificationName("RefreshUI", object: nil)
         }
+    }
+    
+    override init() {
+        super.init()
+        self.reloadConfigurationData()
+    }
+    
+    func reloadConfigurationData() {
+        self.address = configuration.server_address
+        self.credential = NSURLCredential(user: configuration.server_username, password: configuration.server_password, persistence: .ForSession)
     }
     
     func getAllMessages(callbackSuccess: (messages: [Message]) -> Void, callbackError: (status: Int?) -> Void) -> Void {
@@ -35,13 +48,14 @@ class CalciferConnector: NSObject {
             .authenticate(usingCredential: credential)
             .responseJSON { (req, res, json, error) in
                 if (error != nil) {
-                    //log.error("Error: \(error)")
+                    log.error("Error: \(error)")
+                    log.debug(res?.description)
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)
                 }
                 else {
-                    //log.debug("Success: \(url)")
+                    log.debug("Success: \(url)")
                     let json = JSON(json!)
                     
                     self.status = ConnectorStatus.Ok
@@ -49,7 +63,7 @@ class CalciferConnector: NSObject {
                     if (json.count > 0) {
                         callbackSuccess(messages: MessageUtil().parseJSON(json))
                     } else {
-                        //log.debug("no messages received")
+                        log.debug("no messages received")
                         callbackSuccess(messages: [])
                     }
                 }
@@ -65,13 +79,13 @@ class CalciferConnector: NSObject {
             .authenticate(usingCredential: credential)
             .response { (req, res, data, error) in
                 if (error != nil || res?.statusCode != 200) {
-                    //log.error("Error: \(error)")
+                    log.error("Error: \(error)")
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)
                 }
                 else {
-                    //log.debug("Success: \(url)")
+                    log.debug("Success: \(url)")
                 }
         }
     }
