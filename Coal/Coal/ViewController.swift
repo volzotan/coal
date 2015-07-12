@@ -150,10 +150,10 @@ class ViewController: UITableViewController {
 //    }
     
     func addExampleMessages() {
-        let msg1 = Message(mid: "111", payload: "internal message internal message internal internal message internal internal message internal internal message internal")
-        let msg2 = Message(mid: "112", payload: "internal message internal message internal internal message internal ")
-        let msg3 = Message(mid: "113", payload: "silent internal message")
-        let msg4 = Message(mid: "114", payload: "silent internal message")
+        let msg1 = Message(mid: "111", payload: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.")
+        let msg2 = Message(mid: "112", payload: "At vero eos et accusam et justo duo dolores et ea rebum.")
+        let msg3 = Message(mid: "113", payload: "Stet clita kasd gubergren.")
+        let msg4 = Message(mid: "114", payload: "At vero eos et accusam")
         
         msg1.add_time = NSDate()
         msg2.add_time = NSDate()
@@ -161,10 +161,10 @@ class ViewController: UITableViewController {
         msg2.priority = Message.Priority.High
         msg1.priority = Message.Priority.Silent
         
-        self.localstore.add(msg1)
-        self.localstore.add(msg2)
-        self.localstore.add(msg3)
-        self.localstore.add(msg4)
+//        self.localstore.add(msg1)
+//        self.localstore.add(msg2)
+//        self.localstore.add(msg3)
+//        self.localstore.add(msg4)
     }
 
 }

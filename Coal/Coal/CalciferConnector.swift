@@ -49,6 +49,7 @@ class CalciferConnector: NSObject {
             .responseJSON { (req, res, json, error) in
                 if (error != nil) {
                     log.error("Error: \(error)")
+                    log.debug(res?.description)
                     
                     self.status = ConnectorStatus.Error
                     callbackError(status: res?.statusCode)
